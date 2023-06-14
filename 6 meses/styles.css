@@ -1,0 +1,359 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.fecha{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    font-size: 14px;
+}
+
+button.login-btn {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button.login-btn:hover {
+    background-color: #f40612;
+}
+
+#profiles {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tocar{
+    font-family: 'Times New Roman', Times, serif;
+    animation: textH1 .6s linear infinite;
+    
+
+}
+.profile-name{
+    font-size: 25px;
+}
+
+#custom-player {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#custom-player video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#custom-player .controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#custom-player .controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.additional-content {
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.additional-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.additional-content button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.additional-content button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pista-list {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pista-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.pista-email {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+@keyframes animHeart{
+  0%{
+      transform: rotate(-45deg) scale(1.07);
+  }
+  80%{
+      transform: rotate(-45deg) scale(1);
+  }
+  100%{
+      transform: rotate(-45deg) scale(.8);
+  }
+}
+
+.cora{
+    margin-top: -200px;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.heart{
+    height: 180px;
+    width: 180px;
+    background-color: red;
+    position:relative;
+    box-shadow: 10px 10px 90px red;
+    transform: rotate(-45deg);
+    animation: animHeart .6s linear infinite;
+}
+
+.heart::before{
+    
+    content: '';
+    position: absolute;
+    margin-left: -90px;
+    top: -50%;
+    height: 180px;
+    width: 180px;
+    background-color: red;
+    box-shadow: -20px 10px 90px red;
+    border-radius: 50%;
+    
+    
+}
+
+.heart::after{
+    
+    content: '';
+    
+    position:absolute;
+    height: 180px;
+    width: 180px;
+    background-color: red;
+    box-shadow: 10px -10px 90px red;
+    right: -50%;
+    border-radius: 50%;
+    
+}
+
+.caja-madre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.msj{
+    position: absolute;
+    margin-top: 480px;
+    font-size: 25px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    animation: textH1 .6s linear infinite;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+h6 {
+    
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center; 
+    font-size: 120px;
+    
+    color: aliceblue;
+    margin-top: 540px;
+    animation: textH1 .6s linear infinite;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+@keyframes textH1{
+    0%{
+        transform: rotate(0deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(0deg) scale(1);
+    }
+    100%{
+        transform: rotate(0deg) scale(.8);
+    }
+}
+
+@keyframes animHeart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1);
+    }
+    100%{
+        transform: rotate(-45deg) scale(.8);
+    }
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+  }
+
+
+.txt_pr{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+input{
+    border-radius: 8px;
+}
+button{
+    border-radius: 8px;
+}
+.hola{
+    font-family: 'Times New Roman', Times, serif;
+}
+.pista-item{font-family: 'Times New Roman', Times, serif;}
+
+footer{font-family: 'Times New Roman', Times, serif;}
+
+
+
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .fecha {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding-right: .15em;
+    border-right: .15em solid rgb(0, 0, 0);
+    letter-spacing: .15em;
+    animation: typing 3s steps(40, end);
+  }
+  .parpadeo {
+    animation: parpadeo 2s ease-in-out infinite;
+  }
+  
+  @keyframes parpadeo {
+    0%, 50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+
+  
+  
+
+  
